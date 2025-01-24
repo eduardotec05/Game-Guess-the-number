@@ -58,7 +58,7 @@ function numeroAleatorio() {
   let numeroGenerado = Math.floor(Math.random() * numeroMaximo) + 1;
 
   if (listaNumerosJugados.length == numeroMaximo) {
-    asignarTextoElemento("p", "Se han sorteado todos los números posibles");
+    asignarTextoElemento("p", "Se han sorteado todos los números posibles.Actualice la página para volver a jugar.");
   } else {
     if (listaNumerosJugados.includes(numeroGenerado)) {
       return numeroAleatorio();
